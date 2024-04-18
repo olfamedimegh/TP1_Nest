@@ -5,7 +5,9 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { CvController } from './cv/cv.controller';
 import { CvService } from './cv/cv.service';
 import { CvModule } from './cv/cv.module';
+import { UserModule } from './user/user.module';
 import * as dotenv from 'dotenv';
+import { AuthModule } from './auth/auth.module';
 
 dotenv.config();
 
@@ -23,9 +25,11 @@ dotenv.config();
       synchronize: true,
       debug: false
     }),
-    CvModule
+    CvModule,
+    UserModule,
+    AuthModule
   ],
-  controllers: [AppController, CvController],
-  providers: [AppService, CvService],
+  controllers: [AppController],
+  providers: [AppService],
 })
 export class AppModule {}
