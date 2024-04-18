@@ -2,7 +2,7 @@ import { Body, Controller, Delete, Get, Param, ParseIntPipe, Patch, Post, UseGua
 import { UserService } from './user.service';
 import { UpdateUserDto } from './dto/Update-user.dto';
 import { AddUserDto } from './dto/Add-user.dto';
-import { AdminGuard } from 'src/auth/guards/admin.guard';
+import { AdminGuard } from '../auth/guards/admin.guard';
 
 @Controller('user')
 export class UserController {

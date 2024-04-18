@@ -1,5 +1,5 @@
 /* eslint-disable prettier/prettier */
-import { CvEntity } from 'src/cv/entities/cv.entity/cv.entity';
+import { CvEntity } from '../../cv/entities/cv.entity/cv.entity';
 import { Entity, PrimaryGeneratedColumn, Column, ManyToMany, DeleteDateColumn } from 'typeorm';
 
 @Entity()

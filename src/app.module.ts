@@ -8,6 +8,9 @@ import { CvModule } from './cv/cv.module';
 import { UserModule } from './user/user.module';
 import * as dotenv from 'dotenv';
 import { AuthModule } from './auth/auth.module';
+import { SkillService } from './skill/skill.service';
+import { AuthService } from './auth/auth.service';
+import { UserService } from './user/user.service';
 
 dotenv.config();
 
@@ -18,7 +21,7 @@ dotenv.config();
       host: process.env.DB_HOST,
       port: parseInt(process.env.DB_PORT), 
       username: process.env.DB_USERNAME, 
-      password: '',
+      password: process.env.DB_PASSWORD,
       database: process.env.DB_NAME,
       autoLoadEntities: true,
       entities: ["dist/**/*.entity{.ts,.js}"],

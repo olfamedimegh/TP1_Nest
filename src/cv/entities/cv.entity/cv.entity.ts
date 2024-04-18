@@ -1,5 +1,5 @@
-import { Skill } from "src/skill/entities/skill.entity";
-import { UserEntity } from "src/user/entities/user.entity/user.entity";
+import { Skill } from '../../../skill/entities/skill.entity';
+import { UserEntity } from "../../../user/entities/user.entity/user.entity";
 import { Column, DeleteDateColumn, Entity, JoinTable, ManyToMany, ManyToOne, PrimaryGeneratedColumn } from "typeorm";
 
 @Entity('cv')

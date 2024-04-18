@@ -4,7 +4,7 @@ import { UserController } from './user.controller';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { UserEntity } from './entities/user.entity/user.entity';
 import { JwtModule } from '@nestjs/jwt';
-import { AdminGuard } from 'src/auth/guards/admin.guard';
+import { AdminGuard } from '../auth/guards/admin.guard';
 
 @Module({
   imports: [TypeOrmModule.forFeature([UserEntity]), JwtModule],

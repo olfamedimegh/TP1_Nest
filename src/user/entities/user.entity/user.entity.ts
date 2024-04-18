@@ -1,4 +1,4 @@
-import { CvEntity } from "src/cv/entities/cv.entity/cv.entity";
+import { CvEntity } from "../../../cv/entities/cv.entity/cv.entity";
 import { Column, DeleteDateColumn, Entity, OneToMany, PrimaryGeneratedColumn } from "typeorm";
 
 
